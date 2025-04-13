@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="squispeS1T1M.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text=" Tarea Semana 1 Paralelo A"
+                   TextColor="Salmon"
+                   HorizontalOptions="Center"
+                   FontSize="20"/>
+            
+            <Entry x:Name="txtName"
+                    Placeholder="Ingresa tu nombre"/>
+            
+            <Entry x:Name="txtApellido"
+                   Placeholder="Ingresa tu apellido"/>
+            
+            <Entry x:Name="txtNacimiento"
+                   MaxLength="4"
+                   Placeholder="Ingresa el año de nacimiento"/>
+            
+            <Entry x:Name="txtSalario"
+                   Keyboard="Numeric"
+                   Placeholder="Ingresa tu salario"/>
+            
+            <Button x:Name="btnCalcular"
+                    Text="Calcular aporte"
+                    Clicked="btnCalcular_Clicked"/>
+
+            <Label x:Name="lblResultado"
+                   TextColor="DarkGrey"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
